@@ -10,12 +10,13 @@
   justify-content: center;
   flex-wrap: wrap; }
   .gallery .item {
-    margin: 3rem; }
+    margin: 3rem;
+    transition: transform .2s ease, filter .2s ease-in; }
+    .gallery .item:hover {
+      transform: translateY(-4rem);
+      filter: sepia(50%); }
     .gallery .item img {
-      transition: transform .1s ease;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.45); }
-      .gallery .item img:hover {
-        transform: translateY(-2rem); }
 
 .search {
   padding-top: 5rem;

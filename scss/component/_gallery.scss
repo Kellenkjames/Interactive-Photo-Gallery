@@ -10,13 +10,17 @@
     flex-wrap: wrap;
     
     .item {
-        margin: 3rem;   
+        margin: 3rem;  
+        transition: transform .2s ease, filter .2s ease-in;
+        
+        &:hover {
+            transform: translateY(-4rem);
+            filter: sepia(50%);
+        } 
+        
+        
         img {
-            transition: transform .1s ease;
             box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.45); 
-            &:hover {
-                transform: translateY(-2rem);
-            } 
         }
         
     }
