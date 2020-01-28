@@ -11,9 +11,8 @@
   flex-wrap: wrap; }
   .gallery .item {
     margin: 3rem;
-    transition: transform .2s ease, filter .2s ease-in; }
+    transition: filter .2s ease-in-out; }
     .gallery .item:hover {
-      transform: translateY(-4rem);
       filter: sepia(50%); }
     .gallery .item img {
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.45); }

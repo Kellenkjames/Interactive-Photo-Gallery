@@ -11,10 +11,9 @@
     
     .item {
         margin: 3rem;  
-        transition: transform .2s ease, filter .2s ease-in;
+        transition: filter .2s ease-in-out;
         
         &:hover {
-            transform: translateY(-4rem);
             filter: sepia(50%);
         } 
         
