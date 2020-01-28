@@ -1,67 +1,63 @@
 <!DOCTYPE html>
-<html lang="en"> 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>An Interactive Photo Gallery</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet">
-        <link href="node_modules/lightbox2/src/css/lightbox.css">
-        <link rel="stylesheet" href="css/styles.css" type="text/css">
-    </head>
-    <body>
-        <form role="search">
-            <div class="search"> 
-                <input class="search-input" type="search" id="mySearch" name="q"
-                placeholder="Search photos..."
-                aria-label="Search through photo gallery">
-            </div>
-        </form>
-        <div class="container">
-            <ul class="gallery">
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/01.jpg" alt="Hay Bales" /></a>
-                </li>
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/02.jpg" alt="Lake" /></a>
-                </li>
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/03.jpg" alt="Canyon" /></a>
-                </li>
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/04.jpg" alt="Iceberg" /></a>
-                </li>
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/05.jpg" alt="Desert" /></a>
-                </li>
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/06.jpg" alt="Fall" /></a>
-                </li>
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/07.jpg" alt="Plantation" /></a>
-                </li>
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/08.jpg" alt="Dunes" /></a>
-                </li>
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/09.jpg" alt="Countryside Lane" /></a>
-                </li>
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/10.jpg" alt="Sunset" /></a>
-                </li>
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/11.jpg" alt="Cave" /></a>
-                </li>
-                <li class="item">
-                    <a href="#"><img src="assets/photos/thumbnails/12.jpg" alt="Bluebells" /></a>
-                </li>
-            </ul>
+<html lang="en-us"> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>An Interactive Photo Gallery</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet">
+    <link href="node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+    <form role="search">
+        <div class="search"> 
+            <input class="search-input" type="search" id="mySearch" name="q"
+            placeholder="Search photos..."
+            aria-label="Search through photo gallery">
         </div>
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-        <script src="node_modules/lightbox2/src/js/lightbox.js"></script>
-    </body>
+    </form>
+    <div class="container">
+        <ul class="gallery">
+            <li class="item">
+                <a href="assets/photos/01.jpg" data-lightbox="image-1" data-title="Test"><img src="assets/photos/thumbnails/01.jpg" alt="Hay Bales" /></a>
+            </li>
+            <li class="item">
+                <a href="#"><img src="assets/photos/thumbnails/02.jpg" alt="Lake" /></a>
+            </li>
+            <li class="item">
+                <a href="#"><img src="assets/photos/thumbnails/03.jpg" alt="Canyon" /></a>
+            </li>
+            <li class="item">
+                <a href="#"><img src="assets/photos/thumbnails/04.jpg" alt="Iceberg" /></a>
+            </li>
+            <li class="item">
+                <a href="#"><img src="assets/photos/thumbnails/05.jpg" alt="Desert" /></a>
+            </li>
+            <li class="item">
+                <a href="#"><img src="assets/photos/thumbnails/06.jpg" alt="Fall" /></a>
+            </li>
+            <li class="item">
+                <a href="#"><img src="assets/photos/thumbnails/07.jpg" alt="Plantation" /></a>
+            </li>
+            <li class="item">
+                <a href="#"><img src="assets/photos/thumbnails/08.jpg" alt="Dunes" /></a>
+            </li>
+            <li class="item">
+                <a href="#"><img src="assets/photos/thumbnails/09.jpg" alt="Countryside Lane" /></a>
+            </li>
+            <li class="item">
+                <a href="#"><img src="assets/photos/thumbnails/10.jpg" alt="Sunset" /></a>
+            </li>
+            <li class="item">
+                <a href="#"><img src="assets/photos/thumbnails/11.jpg" alt="Cave" /></a>
+            </li>
+            <li class="item">
+                <a href="#"><img src="assets/photos/thumbnails/12.jpg" alt="Bluebells" /></a>
+            </li>
+        </ul>
+    </div>
+   <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
 </html>
