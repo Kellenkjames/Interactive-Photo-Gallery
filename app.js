@@ -10,10 +10,8 @@ $('#mySearch').on('keyup', function () {
 // Next, start trying to target the entire caption by using the getAttribute() method, 
 // then looping and logging all lowercase version of the captions to the console. 
 $('.item a').each(function () {
-    let caption = $(this).data("title");
+    let caption = $(this).attr("data-title").toLowerCase();
     console.log(caption);
-    // console.log( index + ": " + $( this ).text() + caption );
-
 });
 
 
