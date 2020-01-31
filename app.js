@@ -1,43 +1,40 @@
 // HANDLE CONTENT FILTERING 
 
-// Store value of the search input
-const values = [];
-
-// Store captions
-const dataTitles = []; 
-
-function contentFilter() {
+// function contentFilter() {
     
-    // Get the value of the search field whenever a user types in that field and log that value
-    $('#mySearch').on('keyup', function () {
-        let searchValue = $('#mySearch').val();
-        // console.log(searchValue.toLowerCase());
-        // Push values to values array
-        values.push(searchValue);
-        console.log(values);
-    });
+//     // Get the value of the search field whenever a user types in that field and log that value
+//     $('#mySearch').on('keyup', function () {
+//         let value = $('#mySearch').val().toLowerCase();
+//         // Next, start trying to target the entire caption by using the getAttribute() method, 
+//         // then looping and logging all lowercase version of the captions to the console. 
+//         $('item a').filter(function () {
+//             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+//         });
+//         console.log(value);        
+//     }); 
+// };
 
-    // Next, start trying to target the entire caption by using the getAttribute() method, 
-    // then looping and logging all lowercase version of the captions to the console. 
-    $('.item a').each(function () {
-        let captions = $(this).attr("data-title").toLowerCase();
-        // console.log(captions);
-        
-        // Push captions to dataTitles array
-        dataTitles.push(captions);
+// contentFilter();
 
-        // Check if the current value of the search input is included within any of the captions
-        // If so, log the associated image to the console. 
-        if (values.includes(dataTitles.toString())) {
-            console.log("what what, in the butt");
-        }
-        
-    });    
-}
+// HANDLE CONTENT FILTERING 
+const searchBar = $('#mySearch');
 
-contentFilter();
+searchBar.addEventListener('keyup', function(e) {
 
-console.log(dataTitles);
+    // Grab the search term and convert to lower case.
+    const term = e.target.val().toLowerCase();
+
+    // Target the entire caption 
+    const captions = $('ul').getElementsByTagName('li');
+
+    // Create an array
+    Array.from(captions).forEach(function(caption) {
+        const title = caption.
+    })
+
+});
+
+
 
 
 
