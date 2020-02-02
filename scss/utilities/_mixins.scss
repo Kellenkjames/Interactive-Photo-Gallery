@@ -1,3 +1,15 @@
 /* ============================================= */
 /*              Mixins                           */
 /* ============================================= */
+
+@mixin for-tablet-up {
+    @media (min-width: #{$break-tablet}) { @content; }
+}
+
+@mixin for-md-mobile-up {
+    @media (min-width: #{$break-md-mobile}) { @content; }
+}
+
+@mixin for-sm-mobile-up {
+    @media (min-width: #{$break-sm-mobile}) { @content; }
+}

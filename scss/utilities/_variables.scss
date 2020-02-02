@@ -9,10 +9,11 @@ $font-weight-bold: 700;
 
 // MEDIA QUERIES
 $break-tablet: 768px;
-$break-mobile: 500px;
+$break-md-mobile: 500px;
+$break-sm-mobile: 320px;
 
 // GENERAL SPACING
 $vertical-spacings: 5rem;
 
 // MAX WIDTH:
-$max-width-desktop: 1600px;
+$max-width-desktop: 1200px;
