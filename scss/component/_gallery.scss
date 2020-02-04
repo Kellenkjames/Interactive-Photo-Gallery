@@ -40,10 +40,11 @@
         @include for-tablet-up {  
             transition: filter .2s ease-in-out;
             
+        }
+        a {
             &:hover {
                 filter: sepia(50%);
             } 
-            
         }
     }
 }

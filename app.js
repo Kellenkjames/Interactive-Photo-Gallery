@@ -10,7 +10,6 @@ searchBar.on('keyup', function(e) {
     $('.item a').each(function () {
         const caption = $(this).attr("data-title").toLowerCase();
         
-        
         // If search term is in the caption, show the image/s associated to the caption.
         if (caption.toLowerCase().indexOf(term) != -1) {
             $(this).show();

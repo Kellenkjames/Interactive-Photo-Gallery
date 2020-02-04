@@ -8,9 +8,9 @@
 
     &-input {
         @include for-tablet-up {
-            width: 50% !important;
+            width: 40% !important;
         }
-        padding: 1rem 2%;
+        padding: 2rem 2%;
         border: 1px solid #000;
         @include for-sm-mobile-up {
             width: 100%;
