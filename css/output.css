@@ -43,7 +43,7 @@
   text-align: center;
   font-size: 2rem; }
   .search-input {
-    padding: 2rem 2%;
+    padding: 2.5rem 2%;
     border: 1px solid #000; }
     @media (min-width: 768px) {
       .search-input {

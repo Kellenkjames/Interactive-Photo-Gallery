@@ -1,7 +1,7 @@
 // HANDLE IMAGE FILTERING
 const searchBar = $('#mySearch');
 
-searchBar.on('keyup', function(e) {
+searchBar.on('keyup', (e) => {
     
     // Grab the search term and convert to lower case.
     const term = e.target.value.toLowerCase();

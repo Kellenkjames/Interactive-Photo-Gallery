@@ -38,8 +38,7 @@
             }
         }
         @include for-tablet-up {  
-            transition: filter .2s ease-in-out;
-            
+            transition: filter .2s ease-in-out; 
         }
         a {
             &:hover {
